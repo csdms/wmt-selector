@@ -15,10 +15,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: white;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: rgb(109,99,97);
+  border: 2px solid rgb(109,99,97);
 }
 
 
@@ -29,7 +29,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: rgb(26,51,81);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 }
 body {
   color: #fff;
