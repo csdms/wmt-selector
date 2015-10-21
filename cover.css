@@ -21,6 +21,16 @@ a:hover {
   border: 2px solid rgb(109,99,97);
 }
 
+/* Droplist styling */
+.btn-fixed-width {
+  width: 200px;
+}
+.dropdown-menu {
+  text-shadow: none;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
 
 /*
  * Base structure
