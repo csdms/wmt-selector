@@ -40,14 +40,23 @@
 		<span class="caret"></span>
 	      </button>
 	      <ul class="dropdown-menu">
-		<li><a href="https://csdms.colorado.edu/wmt">wmt-prime</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="The complete set of components, for users who want to set up their own model couplings.">
+		  <a href="https://csdms.colorado.edu/wmt">wmt-prime</a></li>
 		<li role="separator" class="divider"></li>
 		<li class="disabled"><a href="#">wmt-coastlines</a></li>
 		<li class="disabled"><a href="#">wmt-deltas</a></li>
 		<li class="disabled"><a href="#">wmt-ed</a></li>
-		<li><a href="https://csdms.colorado.edu/wmt-topoflow">wmt-hydrology</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Simulate hydrological processes such as precipitation, evapotranspiration, infiltration and runoff on short time scales with TopoFlow components.">
+		  <a href="https://csdms.colorado.edu/wmt-topoflow">wmt-hydrology</a></li>
 		<li class="disabled"><a href="#">wmt-stratigraphy</a></li>
-		<li><a href="https://csdms.colorado.edu/wmt-dakota">wmt-uncertainty</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Study model sensitivity analysis and uncertainty quantification with components that can be coupled to Dakota methods.">
+		  <a href="https://csdms.colorado.edu/wmt-dakota">wmt-uncertainty</a></li>
 	      </ul>
 	    </div>
 
@@ -61,5 +70,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Enable Bootstrap tooltips -->
+    <script>
+      $(function () { $("[data-toggle = 'tooltip']").tooltip(); });
+    </script>
   </body>
 </html>
