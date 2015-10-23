@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>The CSDMS Web Modeling Tool</title>
 
     <!-- Bootstrap -->
@@ -40,14 +40,39 @@
 		<span class="caret"></span>
 	      </button>
 	      <ul class="dropdown-menu">
-		<li><a href="https://csdms.colorado.edu/wmt">wmt-prime</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="The complete set of components, for users who want to set up their own model couplings.">
+		  <a href="https://csdms.colorado.edu/wmt">wmt-prime</a></li>
 		<li role="separator" class="divider"></li>
-		<li class="disabled"><a href="#">wmt-coastlines</a></li>
-		<li class="disabled"><a href="#">wmt-deltas</a></li>
-		<li class="disabled"><a href="#">wmt-ed</a></li>
-		<li><a href="https://csdms.colorado.edu/wmt-topoflow">wmt-hydrology</a></li>
-		<li class="disabled"><a href="#">wmt-stratigraphy</a></li>
-		<li><a href="https://csdms.colorado.edu/wmt-dakota">wmt-uncertainty</a></li>
+		<li class="disabled"
+		    data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Simulate coastline evolution under influence of river and wave action. This project couples HydroTrend, Avulsion, CEM, and Waves.">
+		  <a href="#">wmt-coastlines</a></li>
+		<li class="disabled"
+		    data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Simulate river and coastal processes, and how a deltaic coastline changes, with Hydrotrend, Avulsion, River, CEM,  Waves, RCDELTA, Sedflux2D, Sedflux3D, and Plume components.">
+		  <a href="#">wmt-deltas</a></li>
+		<li class="disabled"
+		    data-toggle="tooltip"
+		    data-placement="right"
+		    title="A group of components with reduced parameter sets designed for classroom use.">
+		  <a href="#">wmt-ed</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Simulate hydrological processes such as precipitation, evapotranspiration, infiltration, and runoff on short time scales with TopoFlow components.">
+		  <a href="https://csdms.colorado.edu/wmt-topoflow">wmt-hydrology</a></li>
+		<li class="disabled"
+		    data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Simulate geological-scale landscape evolution and basin fills, and study stratigraphy, with Hydrotrend, River, CHILD, Sedflux2D, and Sedflux3D.">
+		  <a href="#">wmt-stratigraphy</a></li>
+		<li data-toggle="tooltip" 
+		    data-placement="right" 
+		    title="Study model sensitivity analysis and uncertainty quantification with components that can be coupled to Dakota methods.">
+		  <a href="https://csdms.colorado.edu/wmt-dakota">wmt-uncertainty</a></li>
 	      </ul>
 	    </div>
 
@@ -61,5 +86,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Enable Bootstrap tooltips -->
+    <script>
+      $(function () { $("[data-toggle = 'tooltip']").tooltip(); });
+    </script>
   </body>
 </html>
