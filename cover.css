@@ -32,6 +32,37 @@ a:hover {
   margin-left: -100px;
 }
 
+/* Tooltip styles */
+.tooltip-inner {
+  width: 200px;
+  color: black;
+  background-color: white;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: white;
+}
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: white;
+}
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: white;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: white;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: white;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: white;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: white;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: white;
+}
+
 /*
  * Base structure
  */
